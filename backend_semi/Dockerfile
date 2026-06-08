@@ -7,6 +7,8 @@ WORKDIR /app
 # 프로젝트 파일들 복사
 COPY .mvn .mvn
 COPY mvnw mvnw.cmd pom.xml ./
+# [핵심] 리눅스 환경에서 실행 권한을 부여합니다!
+RUN chmod +x mvnw
 COPY src src
 
 # 빌드 실행 (.jar 파일이 target 폴더에 생성됨)
