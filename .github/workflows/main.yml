@@ -29,7 +29,7 @@ jobs:
 
       - name: Build Docker Image
         working-directory: backend_semi
-        run: docker build -t "${{ secrets.DOCKER_IMAGE }}" -f backend_semi/Dockerfile backend_semi
-        
+        run: docker build -t "${{ secrets.DOCKER_IMAGE }}" .
+
       - name: Push Docker Image
         run: docker push "${{ secrets.DOCKER_IMAGE }}"
