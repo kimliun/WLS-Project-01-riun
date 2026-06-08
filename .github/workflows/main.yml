@@ -40,5 +40,5 @@ jobs:
       - name: Build with Maven
         working-directory: backend_semi
         run: |
-          chmod +x mvnw
+          chmod +x ./mvnw
           ./mvnw clean package -DskipTests
