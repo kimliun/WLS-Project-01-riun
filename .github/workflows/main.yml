@@ -36,3 +36,9 @@ jobs:
 
       - name: Push Docker Image
         run: docker push ${{ secrets.DOCKER_IMAGE }}
+
+      - name: Build with Maven
+        working-directory: backend_semi
+        run: |
+          chmod +x mvnw
+          ./mvnw clean package -DskipTests
