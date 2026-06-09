@@ -1,0 +1,18 @@
+.lecture-page {
+  width: 100%;
+  margin-top: 90px;
+  height: calc(100vh - 90px);
+  box-sizing: border-box;
+
+  background: #f4f8ff;
+  overflow: hidden;
+}
+
+.lecture-main {
+  height: calc(100vh - 90px);
+  margin-left: 320px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+  background: #f4f8ff;
+}
